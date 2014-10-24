@@ -6,7 +6,7 @@ requires = [
 ]
 
 setup(name='unicore-cms-ffl',
-      version='0.1',
+      version='0.2.0',
       description='JSON based CMS for Universal Core',
       long_description='JSON based CMS for Universal Core',
       classifiers=[
@@ -30,4 +30,8 @@ setup(name='unicore-cms-ffl',
       [paste.app_factory]
       main = unicorecmsffl:main
       """,
+      message_extractors={'.': [
+      ('**.py', 'python', None),
+      ('**.pt', 'chameleon', None),
+      ]},
       )
