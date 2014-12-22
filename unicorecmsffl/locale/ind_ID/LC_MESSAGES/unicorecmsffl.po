@@ -1,55 +1,47 @@
 #
-# Language ind translations for PACKAGE package
+# SOME DESCRIPTIVE TITLE
 # This file is distributed under the same license as the PACKAGE package.
-# TonyM <tonym@localhost>, 2014.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2014-11-19 17:16+0200\n"
-"PO-Revision-Date: 2014-09-26 14:32+0200\n"
-"Last-Translator: TonyM <tonym@localhost>\n"
-"Language-Team: Language ind\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-22 13:49+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ind_ID\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Default: Latest
-#: unicorecmsffl/templates/home.pt:10
-#, fuzzy
-msgid "Latest"
-msgstr "Beatle"
-
-#. Default: More
-#: unicorecmsffl/templates/home.pt:63
-msgid "More"
-msgstr "Bee"
+"X-Generator: Translate Toolkit 1.11.0\n"
 
 #. Default: Home
 #: unicorecmsffl/templates/base.pt:45 unicorecmsffl/templates/base.pt:74
 msgid "Home"
-msgstr "Ladybug"
+msgstr ""
 
 #. Default: About
 #: unicorecmsffl/templates/base.pt:48 unicorecmsffl/templates/base.pt:77
-#, fuzzy
 msgid "About"
-msgstr "Cricket"
+msgstr ""
 
 #. Default: Credits
 #: unicorecmsffl/templates/base.pt:51 unicorecmsffl/templates/base.pt:80
-#, fuzzy
 msgid "Credits"
-msgstr "Ant"
+msgstr ""
 
 #. Default: Contact
 #: unicorecmsffl/templates/base.pt:54 unicorecmsffl/templates/base.pt:83
-#, fuzzy
 msgid "Contact"
-msgstr "Butterfly"
+msgstr ""
 
-#~ msgid "more"
-#~ msgstr "Bee"
+#. Default: Latest
+#: unicorecmsffl/templates/home.pt:29
+msgid "Latest"
+msgstr ""
 
-#~ msgid "home"
-#~ msgstr "Ladybug"
+#. Default: More
+#: unicorecmsffl/templates/home.pt:82
+msgid "More"
+msgstr ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 17:16+0200\n"
+"POT-Creation-Date: 2014-12-22 13:49+0200\n"
 "PO-Revision-Date: 2014-10-15 15:24+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,16 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1413386664.811237\n"
-
-#. Default: Latest
-#: unicorecmsffl/templates/home.pt:10
-msgid "Latest"
-msgstr ""
-
-#. Default: More
-#: unicorecmsffl/templates/home.pt:63
-msgid "More"
-msgstr ""
 
 #. Default: Home
 #: unicorecmsffl/templates/base.pt:45 unicorecmsffl/templates/base.pt:74
@@ -46,6 +36,16 @@ msgstr "Shukrani"
 #: unicorecmsffl/templates/base.pt:54 unicorecmsffl/templates/base.pt:83
 msgid "Contact"
 msgstr "Anwani"
+
+#. Default: Latest
+#: unicorecmsffl/templates/home.pt:29
+msgid "Latest"
+msgstr ""
+
+#. Default: More
+#: unicorecmsffl/templates/home.pt:82
+msgid "More"
+msgstr ""
 
 #~ msgid "Thanks to our partners"
 #~ msgstr "Shukrani kwa washirika wetu"
