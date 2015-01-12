@@ -23,9 +23,17 @@
         <span tal:omit-tag="" tal:condition="not repeat.item.end"> |</span>
       </span>
     </div>
-    <div id="header">
-        <a href="/"><img src="${request.static_url('cms:static/img/logo.png')}?v=20141014" border="0" /></a>
+    <div tal:define="localisation view.locale" tal:omit-tag="">
+        <div id="header">
+            <condition tal:omit-tag="" tal:condition="localisation and localisation=='spa_ES'">
+                <a href="/"><img width="120" alt="Para la Vida" src="${request.static_url('cms:static/img/logo_spa_es.png')}?v=20141014" border="0" /></a>
+            </condition>
+            <condition tal:omit-tag="" tal:condition="not (localisation and localisation=='spa_ES')">
+                <a href="/"><img alt="Facts for Life" src="${request.static_url('cms:static/img/logo.png')}?v=20141014" border="0" /></a>
+            </condition>
+        </div>
     </div>
+
     <div id="nav">
         <a href="/" i18n:translate="Home">Home</a> |
         <a href="/about/" i18n:translate="About">About</a> |

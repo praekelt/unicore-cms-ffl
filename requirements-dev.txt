@@ -1,5 +1,7 @@
+-r requirements.txt
 coveralls
 pytest
 pytest-cov
 pep8
 pyflakes
+mock
