@@ -4,7 +4,7 @@ mkdir -p unicorecmsffl/locale
 
 pot-create -o unicorecmsffl/locale/unicorecmsffl.pot unicorecmsffl/
 
-declare -a arr=("eng_GB" "tha_TH" "ind_ID" "swa_TZ" "swa_KE")
+declare -a arr=("eng_GB" "tha_TH" "ind_ID" "swa_TZ" "swa_KE" "spa_ES" "hin_IN")
 
 for lang in "${arr[@]}"
 do
