@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-12 16:49+0200\n"
+"POT-Creation-Date: 2015-01-20 17:33+0200\n"
 "PO-Revision-Date: 2015-01-12 13:09+0000\n"
 "Last-Translator: Milton <milton@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,21 +28,21 @@ msgid "More"
 msgstr ""
 
 #. Default: Home
-#: unicorecmsffl/templates/base.pt:45 unicorecmsffl/templates/base.pt:74
+#: unicorecmsffl/templates/base.pt:60 unicorecmsffl/templates/base.pt:89
 msgid "Home"
 msgstr "घर"
 
 #. Default: About
-#: unicorecmsffl/templates/base.pt:48 unicorecmsffl/templates/base.pt:77
+#: unicorecmsffl/templates/base.pt:63 unicorecmsffl/templates/base.pt:92
 msgid "About"
 msgstr "हमारे बारे में"
 
 #. Default: Credits
-#: unicorecmsffl/templates/base.pt:51 unicorecmsffl/templates/base.pt:80
+#: unicorecmsffl/templates/base.pt:66 unicorecmsffl/templates/base.pt:95
 msgid "Credits"
 msgstr "क्रेडिट"
 
 #. Default: Contact
-#: unicorecmsffl/templates/base.pt:54 unicorecmsffl/templates/base.pt:83
+#: unicorecmsffl/templates/base.pt:69 unicorecmsffl/templates/base.pt:98
 msgid "Contact"
 msgstr "संपर्क करें"

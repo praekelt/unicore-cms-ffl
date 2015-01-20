@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-01-12 16:49+0200\n"
+"POT-Creation-Date: 2015-01-20 17:33+0200\n"
 "PO-Revision-Date: 2014-09-25 17:58+0200\n"
 "Last-Translator: TonyM <tonym@localhost>\n"
 "Language-Team: Language eng\n"
@@ -25,21 +25,21 @@ msgid "More"
 msgstr ""
 
 #. Default: Home
-#: unicorecmsffl/templates/base.pt:45 unicorecmsffl/templates/base.pt:74
+#: unicorecmsffl/templates/base.pt:60 unicorecmsffl/templates/base.pt:89
 msgid "Home"
 msgstr ""
 
 #. Default: About
-#: unicorecmsffl/templates/base.pt:48 unicorecmsffl/templates/base.pt:77
+#: unicorecmsffl/templates/base.pt:63 unicorecmsffl/templates/base.pt:92
 msgid "About"
 msgstr ""
 
 #. Default: Credits
-#: unicorecmsffl/templates/base.pt:51 unicorecmsffl/templates/base.pt:80
+#: unicorecmsffl/templates/base.pt:66 unicorecmsffl/templates/base.pt:95
 msgid "Credits"
 msgstr ""
 
 #. Default: Contact
-#: unicorecmsffl/templates/base.pt:54 unicorecmsffl/templates/base.pt:83
+#: unicorecmsffl/templates/base.pt:69 unicorecmsffl/templates/base.pt:98
 msgid "Contact"
 msgstr ""
