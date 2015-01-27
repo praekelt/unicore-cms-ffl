@@ -35,13 +35,19 @@
         </div>
     </div>
 
-    <div id="nav">
+    <div id="nav" tal:condition="python:view.get_language_direction()=='ltr'">
         <a href="/" i18n:translate="Home">Home</a> |
         <a href="/about/" i18n:translate="About">About</a> |
         <a href="/credits/" i18n:translate="Credits">Credits</a> |
         <a href="/contact/" i18n:translate="Contact">Contact</a>
     </div>
 
+    <div id="nav" tal:condition="python:view.get_language_direction()=='rtl'">
+        <a href="/contact/" i18n:translate="Contact">Contact</a> |
+        <a href="/credits/" i18n:translate="Credits">Credits</a> |
+        <a href="/about/" i18n:translate="About">About</a> |
+        <a href="/" i18n:translate="Home">Home</a> 
+    </div>
 
     <div id="content">
 
