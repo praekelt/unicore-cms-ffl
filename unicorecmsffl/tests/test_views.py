@@ -2,9 +2,9 @@ from datetime import datetime
 from pyramid import testing
 
 from cms.tests.base import UnicoreTestCase
-from unicorecmsffl import main
 from unicore.content.models import Page, Localisation
-from webtest import TestApp
+
+from unicorecmsffl import main
 
 
 class TestViews(UnicoreTestCase):
@@ -23,7 +23,7 @@ class TestViews(UnicoreTestCase):
             'thumbor.security_key': 'sample-security-key',
         }
         self.config = testing.setUp(settings=settings)
-        self.app = TestApp(main({}, **settings))
+        self.app = self.mk_app(self.workspace, settings=settings, main=main)
 
     def test_homepage_page(self):
         self.workspace.setup_custom_mapping(Page, {
