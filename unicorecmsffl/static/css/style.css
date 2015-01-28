@@ -52,7 +52,7 @@
 
     #menu { background: #0093ef; color: #87cae3; text-align: center; }
         #menu a { padding: 8px 10px; display: block; border-bottom: 1px dotted #fff; text-align: left; color: #fff; }
-        [dir='rtl'] #menu a { padding: 8px 10px; display: block; border-bottom: 1px dotted #fff; text-align: right; color: #fff; }
+        [dir='rtl'] #menu a { text-align: right; }
 
 
 /*  FOOTER  */
