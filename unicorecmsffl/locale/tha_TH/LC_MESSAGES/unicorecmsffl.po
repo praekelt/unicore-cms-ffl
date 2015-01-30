@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-01-27 12:40+0200\n"
+"POT-Creation-Date: 2015-01-30 14:51+0200\n"
 "PO-Revision-Date: 2014-09-26 14:32+0200\n"
 "Last-Translator: TonyM <tonym@localhost>\n"
 "Language-Team: Language tha\n"
@@ -26,24 +26,28 @@ msgid "More"
 msgstr "Swan"
 
 #. Default: Home
-#: unicorecmsffl/templates/base.pt:60 unicorecmsffl/templates/base.pt:89
+#: unicorecmsffl/templates/base.pt:60 unicorecmsffl/templates/base.pt:86
+#: unicorecmsffl/templates/base.pt:105
 msgid "Home"
 msgstr "Duck"
 
 #. Default: About
-#: unicorecmsffl/templates/base.pt:63 unicorecmsffl/templates/base.pt:92
+#: unicorecmsffl/templates/base.pt:63 unicorecmsffl/templates/base.pt:83
+#: unicorecmsffl/templates/base.pt:108
 #, fuzzy
 msgid "About"
 msgstr "Goose"
 
 #. Default: Credits
-#: unicorecmsffl/templates/base.pt:66 unicorecmsffl/templates/base.pt:95
+#: unicorecmsffl/templates/base.pt:66 unicorecmsffl/templates/base.pt:80
+#: unicorecmsffl/templates/base.pt:111
 #, fuzzy
 msgid "Credits"
 msgstr "Dove"
 
 #. Default: Contact
-#: unicorecmsffl/templates/base.pt:69 unicorecmsffl/templates/base.pt:98
+#: unicorecmsffl/templates/base.pt:69 unicorecmsffl/templates/base.pt:77
+#: unicorecmsffl/templates/base.pt:114
 #, fuzzy
 msgid "Contact"
 msgstr "Pigeon"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-27 12:40+0200\n"
+"POT-Creation-Date: 2015-01-30 14:51+0200\n"
 "PO-Revision-Date: 2015-01-12 13:23+0000\n"
 "Last-Translator: Botswang <botswang@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,21 +28,25 @@ msgid "More"
 msgstr ""
 
 #. Default: Home
-#: unicorecmsffl/templates/base.pt:60 unicorecmsffl/templates/base.pt:89
+#: unicorecmsffl/templates/base.pt:60 unicorecmsffl/templates/base.pt:86
+#: unicorecmsffl/templates/base.pt:105
 msgid "Home"
 msgstr "Accueil"
 
 #. Default: About
-#: unicorecmsffl/templates/base.pt:63 unicorecmsffl/templates/base.pt:92
+#: unicorecmsffl/templates/base.pt:63 unicorecmsffl/templates/base.pt:83
+#: unicorecmsffl/templates/base.pt:108
 msgid "About"
 msgstr "À propos"
 
 #. Default: Credits
-#: unicorecmsffl/templates/base.pt:66 unicorecmsffl/templates/base.pt:95
+#: unicorecmsffl/templates/base.pt:66 unicorecmsffl/templates/base.pt:80
+#: unicorecmsffl/templates/base.pt:111
 msgid "Credits"
 msgstr "Crédits"
 
 #. Default: Contact
-#: unicorecmsffl/templates/base.pt:69 unicorecmsffl/templates/base.pt:98
+#: unicorecmsffl/templates/base.pt:69 unicorecmsffl/templates/base.pt:77
+#: unicorecmsffl/templates/base.pt:114
 msgid "Contact"
 msgstr "Contact"
