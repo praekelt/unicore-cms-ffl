@@ -5,7 +5,8 @@
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       metal:define-macro="layout"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      i18n:domain="unicorecmsffl">
+      i18n:domain="unicorecmsffl"
+      dir="${view.get_language_direction()}">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}img/favicon.ico" />
@@ -34,13 +35,19 @@
         </div>
     </div>
 
-    <div id="nav">
+    <div id="nav" tal:condition="python:view.get_language_direction()=='ltr'">
         <a href="/" i18n:translate="Home">Home</a> |
         <a href="/about/" i18n:translate="About">About</a> |
         <a href="/credits/" i18n:translate="Credits">Credits</a> |
         <a href="/contact/" i18n:translate="Contact">Contact</a>
     </div>
 
+    <div id="nav" tal:condition="python:view.get_language_direction()=='rtl'">
+        <a href="/contact/" i18n:translate="Contact">Contact</a> |
+        <a href="/credits/" i18n:translate="Credits">Credits</a> |
+        <a href="/about/" i18n:translate="About">About</a> |
+        <a href="/" i18n:translate="Home">Home</a> 
+    </div>
 
     <div id="content">
 
