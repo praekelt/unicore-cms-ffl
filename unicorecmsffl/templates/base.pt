@@ -20,10 +20,9 @@
 <div id="wrap">
     <div id="lang">
       <span tal:repeat="item view.get_display_languages()">
-        <a tal:attributes="{'class':'active'} if view.locale==item[0] else {}" href="/locale/${item[0]}/">${item[1]}</a>
-        <span tal:omit-tag="" tal:condition="not repeat.item.end"> |</span>
+        <a tal:attributes="{'class':'active'} if view.locale==item[0] else {}" href="/locale/${item[0]}/">${item[1]}</a> |
       </span>
-       | <a href="/locale/change/">&rarr;</a>
+       <a href="/locale/change/">&rarr;</a>
     </div>
     <div tal:define="localisation view.locale" tal:omit-tag="">
         <div id="header">
