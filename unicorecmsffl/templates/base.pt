@@ -19,10 +19,11 @@
 <body>
 <div id="wrap">
     <div id="nav">
-      <span tal:repeat="item view.get_available_languages">
-        <a href="/locale/?language=${item[0]}">${item[1]}</a>
+      <span tal:repeat="item view.get_display_languages()">
+        <a href="/locale/${item[0]}/">${item[1]}</a>
         <span tal:omit-tag="" tal:condition="not repeat.item.end"> |</span>
       </span>
+      <span> | </span><a href="/locale/change/">&gt;&gt;</a>
     </div>
     <div tal:define="localisation view.locale" tal:omit-tag="">
         <div id="header">
@@ -46,7 +47,7 @@
         <a href="/contact/" i18n:translate="Contact">Contact</a> |
         <a href="/credits/" i18n:translate="Credits">Credits</a> |
         <a href="/about/" i18n:translate="About">About</a> |
-        <a href="/" i18n:translate="Home">Home</a> 
+        <a href="/" i18n:translate="Home">Home</a>
     </div>
 
     <div id="content">
