@@ -35,14 +35,14 @@
         </div>
     </div>
 
-    <div id="nav" tal:condition="python:view.get_language_direction()=='ltr'">
+    <div id="nav" tal:condition="python:view.get_language_direction()=='ltr'" metal:define-slot="nav">
         <a href="/" i18n:translate="Home">Home</a> |
         <a href="/about/" i18n:translate="About">About</a> |
         <a href="/credits/" i18n:translate="Credits">Credits</a> |
         <a href="/contact/" i18n:translate="Contact">Contact</a>
     </div>
 
-    <div id="nav" tal:condition="python:view.get_language_direction()=='rtl'">
+    <div id="nav" tal:condition="python:view.get_language_direction()=='rtl'" metal:define-slot="nav">
         <a href="/contact/" i18n:translate="Contact">Contact</a> |
         <a href="/credits/" i18n:translate="Credits">Credits</a> |
         <a href="/about/" i18n:translate="About">About</a> |
