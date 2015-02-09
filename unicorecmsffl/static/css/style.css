@@ -35,6 +35,12 @@
         color: #92AFC1;
     }
 
+    .lang-change {
+        position: relative;
+        top: -3px;
+        font-weight: bold;
+    }
+
 /*  NAV  */
 
     #nav { padding: 10px; background: #cce9fc; color: #fff; text-align: center; }
