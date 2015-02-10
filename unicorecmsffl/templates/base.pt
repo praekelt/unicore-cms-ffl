@@ -33,7 +33,7 @@
                 <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_asm_in.png')}?v=20150210" border="0" /></a>
             </condition>
             <condition tal:omit-tag="" tal:condition="localisation and localisation=='ben_IN'">
-                <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_ben_in.png')}?v=20150210" border="0" /></a>
+                <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_ben_in.png')}?v=20150210-2" border="0" /></a>
             </condition>
             <condition tal:omit-tag="" tal:condition="localisation and localisation=='hin_IN'">
                 <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_hin_in.png')}?v=20150210" border="0" /></a>
