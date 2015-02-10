@@ -29,7 +29,26 @@
             <condition tal:omit-tag="" tal:condition="localisation and localisation=='spa_ES'">
                 <a href="/"><img width="120" alt="Para la Vida" src="${request.static_url('cms:static/img/logo_spa_es.png')}?v=20141014" border="0" /></a>
             </condition>
-            <condition tal:omit-tag="" tal:condition="not (localisation and localisation=='spa_ES')">
+            <condition tal:omit-tag="" tal:condition="localisation and localisation=='asm_IN'">
+                <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_asm_in.png')}?v=20150210" border="0" /></a>
+            </condition>
+            <condition tal:omit-tag="" tal:condition="localisation and localisation=='ben_IN'">
+                <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_ben_in.png')}?v=20150210" border="0" /></a>
+            </condition>
+            <condition tal:omit-tag="" tal:condition="localisation and localisation=='hin_IN'">
+                <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_hin_in.png')}?v=20150210" border="0" /></a>
+            </condition>
+            <condition tal:omit-tag="" tal:condition="localisation and localisation=='mar_IN'">
+                <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_mar_in.png')}?v=20150210" border="0" /></a>
+            </condition>
+            <condition tal:omit-tag="" tal:condition="localisation and localisation=='tam_IN'">
+                <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_tam_in.png')}?v=20150210" border="0" /></a>
+            </condition>
+            <condition tal:omit-tag="" tal:condition="localisation and localisation=='tel_IN'">
+                <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_tel_in.png')}?v=20150210" border="0" /></a>
+            </condition>
+            <condition tal:omit-tag=""
+                       tal:condition="not (localisation and (localisation in ['spa_ES', 'asm_IN', 'ben_IN', 'hin_IN', 'mar_IN', 'tam_IN', 'tel_IN']))">
                 <a href="/"><img alt="Facts for Life" src="${request.static_url('cms:static/img/logo.png')}?v=20141014" border="0" /></a>
             </condition>
         </div>
