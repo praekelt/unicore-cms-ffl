@@ -1,6 +1,6 @@
 <div metal:use-macro="view.global_template"
     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-    i18n:domain="unicorecmsebola">
+    i18n:domain="unicorecmsffl">
     <div metal:fill-slot="content">
         <div>
             <div tal:condition="paginator" class="box item">
