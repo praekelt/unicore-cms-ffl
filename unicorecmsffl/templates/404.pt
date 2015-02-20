@@ -8,9 +8,8 @@
     	
         <div class="box item">
             <p i18n:translate="Go to the">Go to the
-            <a href="/" i18n:translate="Home Page">Home Page</a></p>
+            <a href="/" i18n:translate="Home Page">Home Page</a> or <span i18n:translate="Search the site:">search the site</span>:</p>
         </div>
-        <div class="h2" i18n:translate="Search the site:">Search the site:</div>
    	    <div metal:define-slot="search" metal:use-macro="view.search_box_template"></div>
 
 		</div>
