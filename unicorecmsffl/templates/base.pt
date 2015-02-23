@@ -85,7 +85,7 @@
 
     </div>
 
-    <div metal:define-slot="search" metal:use-macro="view.search_box_template"></div>
+    <div tal:omit-tag="" metal:define-slot="search" metal:use-macro="view.search_box_template"></div>
 
     <div id="footer">
         <span>&copy; Unicef 2014</span>
