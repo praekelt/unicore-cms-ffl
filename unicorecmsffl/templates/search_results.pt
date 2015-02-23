@@ -18,7 +18,7 @@
 
                 <div tal:condition="not paginator" class="box item">
                     <p tal:condition="query"><span tal:omit-tag="" i18n:translate='No results found for'>No results found for</span> <b>${query}</b></p>
-                    <p tal:condition="not query" i18n:translate="No results found!">No results found!</p>
+                    <p tal:condition="not query" i18n:translate="Sorry, no results found.">Sorry, no results found.</p>
                 </div>
     </div>
 </div>
