@@ -24,34 +24,8 @@
       </span>
        <a href="/locale/change/" tal:condition="len(view.get_available_languages)>2" class="lang-change">&hellip;</a>
     </div>
-    <div tal:define="localisation view.locale" tal:omit-tag="">
-        <div id="header">
-            <condition tal:omit-tag="" tal:condition="localisation and localisation=='spa_ES'">
-                <a href="/"><img width="120" alt="Para la Vida" src="${request.static_url('cms:static/img/logo_spa_es.png')}?v=20141014" border="0" /></a>
-            </condition>
-            <condition tal:omit-tag="" tal:condition="localisation and localisation=='asm_IN'">
-                <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_asm_in.png')}?v=20150210" border="0" /></a>
-            </condition>
-            <condition tal:omit-tag="" tal:condition="localisation and localisation=='ben_IN'">
-                <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_ben_in.png')}?v=20150210-2" border="0" /></a>
-            </condition>
-            <condition tal:omit-tag="" tal:condition="localisation and localisation=='hin_IN'">
-                <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_hin_in.png')}?v=20150210" border="0" /></a>
-            </condition>
-            <condition tal:omit-tag="" tal:condition="localisation and localisation=='mar_IN'">
-                <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_mar_in.png')}?v=20150210" border="0" /></a>
-            </condition>
-            <condition tal:omit-tag="" tal:condition="localisation and localisation=='tam_IN'">
-                <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_tam_in.png')}?v=20150210" border="0" /></a>
-            </condition>
-            <condition tal:omit-tag="" tal:condition="localisation and localisation=='tel_IN'">
-                <a href="/"><img width="120" alt="Facts for Life" src="${request.static_url('cms:static/img/logo_tel_in.png')}?v=20150210" border="0" /></a>
-            </condition>
-            <condition tal:omit-tag=""
-                       tal:condition="not (localisation and (localisation in ['spa_ES', 'asm_IN', 'ben_IN', 'hin_IN', 'mar_IN', 'tam_IN', 'tel_IN']))">
-                <a href="/"><img alt="Facts for Life" src="${request.static_url('cms:static/img/logo.png')}?v=20141014" border="0" /></a>
-            </condition>
-        </div>
+
+    <div metal:use-macro="view.logo_template" tal:omit-tag="" tal:define="img_attrs view.get_logo_attributes(default_image_src=request.static_url('cms:static/img/logo.png'), width=120)">
     </div>
 
     <div id="nav" tal:condition="python:view.get_language_direction()=='ltr'" metal:define-slot="nav">
