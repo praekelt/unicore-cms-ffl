@@ -77,33 +77,5 @@ class TestViews(UnicoreTestCase):
         resp = self.app.get('/?_LOCALE_=swh_TZ', status=200)
         self.assertTrue('<a href="/">Nyumbani</a>' in resp.body)
 
-        resp = self.app.get('/?_LOCALE_=spa_ES', status=200)
-        self.assertTrue('logo_spa_es.png' in resp.body)
-        self.assertFalse('logo.png' in resp.body)
-
-        resp = self.app.get('/?_LOCALE_=asm_IN', status=200)
-        self.assertTrue('logo_asm_in.png' in resp.body)
-        self.assertFalse('logo.png' in resp.body)
-
-        resp = self.app.get('/?_LOCALE_=ben_IN', status=200)
-        self.assertTrue('logo_ben_in.png' in resp.body)
-        self.assertFalse('logo.png' in resp.body)
-
-        resp = self.app.get('/?_LOCALE_=hin_IN', status=200)
-        self.assertTrue('logo_hin_in.png' in resp.body)
-        self.assertFalse('logo.png' in resp.body)
-
-        resp = self.app.get('/?_LOCALE_=mar_IN', status=200)
-        self.assertTrue('logo_mar_in.png' in resp.body)
-        self.assertFalse('logo.png' in resp.body)
-
-        resp = self.app.get('/?_LOCALE_=tam_IN', status=200)
-        self.assertTrue('logo_tam_in.png' in resp.body)
-        self.assertFalse('logo.png' in resp.body)
-
-        resp = self.app.get('/?_LOCALE_=tel_IN', status=200)
-        self.assertTrue('logo_tel_in.png' in resp.body)
-        self.assertFalse('logo.png' in resp.body)
-
         resp = self.app.get('/?_LOCALE_=por_PT', status=200)
         self.assertTrue('logo.png' in resp.body)
