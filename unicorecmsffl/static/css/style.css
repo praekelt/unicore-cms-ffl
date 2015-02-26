@@ -14,8 +14,8 @@
 
 /*  HEADER  */
 
-    #header { padding: 10px; background: #cce9fc; text-align: center; border-bottom: 1px dotted #0093ef; }
-        #header img { display: block; margin: 0 auto }
+    #logo-container { padding: 10px; background: #cce9fc; text-align: center; border-bottom: 1px dotted #0093ef; }
+        #logo-container img { display: block; margin: 0 auto }
 
 /* LANG */
 
