@@ -77,6 +77,10 @@
         #menu a { padding: 8px 10px; display: block; border-bottom: 1px dotted #fff; text-align: left; color: #fff; }
         [dir='rtl'] #menu a { text-align: right; }
 
+/* BASE */
+.form-search {padding:10px 10px; background-color: #009aef; color: #fff; margin: 0; border-bottom: 1px dotted #fff;}
+.form-search input {border: 0;}
+.form-search #q {padding: 5px;}
 
 /*  FOOTER  */
 
