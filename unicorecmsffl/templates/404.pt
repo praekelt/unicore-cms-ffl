@@ -16,10 +16,5 @@
             </a>
             <div class="clear"></div>
         </div>
-    
-
-        <div class="h2" i18n:translate="Search the site:">Search the site:</div>
-   	    <div metal:define-slot="search" metal:use-macro="view.search_box_template"></div>
-
 	</div>
 </div>
