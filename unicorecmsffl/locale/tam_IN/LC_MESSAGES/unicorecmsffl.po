@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-06 14:03+0200\n"
+"POT-Creation-Date: 2015-04-28 12:51+0200\n"
 "PO-Revision-Date: 2015-01-30 12:34+0000\n"
 "Last-Translator: Botswang <botswang@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,35 +18,86 @@ msgstr ""
 "X-POOTLE-MTIME: 1422621289.501175\n"
 
 #. Default: Latest
-#: unicorecmsffl/templates/home.pt:29
+#: unicorecmsffl/templates/home.pt:18
 msgid "Latest"
 msgstr ""
 
-#. Default: More
-#: unicorecmsffl/templates/home.pt:82
-msgid "More"
+#. Default: 1 search result for:
+#: unicorecmsffl/templates/search_results.pt:7
+msgid "1 search result for:"
+msgstr ""
+
+#. Default: search results for:
+#: unicorecmsffl/templates/search_results.pt:8
+msgid "search results for:"
+msgstr ""
+
+#. Default: Read More
+#: unicorecmsffl/templates/search_results.pt:16
+msgid "Read More"
+msgstr ""
+
+#. Default: No results found for
+#: unicorecmsffl/templates/search_results.pt:20
+msgid "No results found for"
+msgstr ""
+
+#. Default: Sorry, no results found.
+#: unicorecmsffl/templates/search_results.pt:21
+msgid "Sorry, no results found."
+msgstr ""
+
+#. Default: We can't find that page, sorry.
+#: unicorecmsffl/templates/404.pt:7
+msgid "We can't find that page, sorry."
+msgstr ""
+
+#. Default: Home Page
+#. Used in sentence: "Go to the <dynamic element>"
+#: unicorecmsffl/templates/404.pt:11
+#, fuzzy
+msgid "Home Page"
+msgstr "வீட்டில்"
+
+#. Default: Go to the <dynamic element>
+#: unicorecmsffl/templates/404.pt:10
+msgid "Go to the"
+msgstr ""
+
+#: unicorecmsffl/templates/search_box.pt:9
+msgid "Search"
+msgstr ""
+
+#. Default: Previous
+#: unicorecmsffl/templates/paginator.pt:9
+msgid "Previous"
+msgstr ""
+
+#. Default: Next
+#: unicorecmsffl/templates/paginator.pt:17
+msgid "Next"
 msgstr ""
 
 #. Default: Home
-#: unicorecmsffl/templates/base.pt:60 unicorecmsffl/templates/base.pt:86
-#: unicorecmsffl/templates/base.pt:105
+#: unicorecmsffl/templates/base.pt:32 unicorecmsffl/templates/base.pt:42
+#: unicorecmsffl/templates/base.pt:53
 msgid "Home"
 msgstr "வீட்டில்"
 
 #. Default: About
-#: unicorecmsffl/templates/base.pt:63 unicorecmsffl/templates/base.pt:83
-#: unicorecmsffl/templates/base.pt:108
+#: unicorecmsffl/templates/base.pt:33 unicorecmsffl/templates/base.pt:41
+#: unicorecmsffl/templates/base.pt:54
 msgid "About"
 msgstr "எங்களை பற்றி"
 
 #. Default: Credits
-#: unicorecmsffl/templates/base.pt:66 unicorecmsffl/templates/base.pt:80
-#: unicorecmsffl/templates/base.pt:111
+#: unicorecmsffl/templates/base.pt:34 unicorecmsffl/templates/base.pt:40
+#: unicorecmsffl/templates/base.pt:55
 msgid "Credits"
 msgstr "கடன்"
 
 #. Default: Contact
-#: unicorecmsffl/templates/base.pt:69 unicorecmsffl/templates/base.pt:77
-#: unicorecmsffl/templates/base.pt:114
+#: unicorecmsffl/templates/base.pt:35 unicorecmsffl/templates/base.pt:39
+#: unicorecmsffl/templates/base.pt:56
 msgid "Contact"
 msgstr "எங்களை தொடர்பு கொள்ள"
