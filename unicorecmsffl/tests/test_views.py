@@ -78,4 +78,4 @@ class TestViews(UnicoreTestCase):
         self.assertTrue('<a href="/">Nyumbani</a>' in resp.body)
 
         resp = self.app.get('/?_LOCALE_=por_PT', status=200)
-        self.assertTrue('logo.png' in resp.body)
+        self.assertTrue('logo_ffl.png' in resp.body)
