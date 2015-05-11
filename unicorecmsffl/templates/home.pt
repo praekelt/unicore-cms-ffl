@@ -34,14 +34,11 @@
         </div>
         <div class="items" tal:condition="view.get_featured_category_pages(cat.uuid)">
             <div class="box">
-                <div class="item" tal:repeat="page view.get_featured_category_pages(cat.uuid)">
+                <div class="item" tal:repeat="page view.get_featured_category_pages(cat.uuid)[:20]">
                     <div class="text">
                         <a href="/content/detail/${page.uuid}/">${page.title}</a>
                     </div>
                 </div>
-            <div class="pagi" tal:condition="view.get_featured_category_pages(cat.uuid)">
-                <a href="/content/list/${cat.uuid}/"><span i18n:translate="More">More</span> ${cat.title}</a>
-            </div>
             </div>
         </div>
         </div>

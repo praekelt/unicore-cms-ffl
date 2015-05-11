@@ -5,6 +5,8 @@
 /*  GLOBAL  */
 
     html, body { margin: 0; padding: 0; color: #666; background: #fff; font-size: 1em; font-family: Arial, Helvetica, sans-serif; line-height: 1.3em; -webkit-text-size-adjust: none; }
+    [dir='rtl'] body {font-size: 1.4em;}
+
     input, select, textarea { font-size: 95%; font-family: Arial, Helvetica, sans-serif; }
     a { color: #009aef; text-decoration: none; }
     .clear { width: 100%; height: 0px; clear: both; display: block; }
@@ -14,9 +16,32 @@
 
 /*  HEADER  */
 
-    #header { padding: 10px; background: #cce9fc; text-align: center; border-bottom: 1px dotted #0093ef; }
-        #header img { display: block; margin: 0 auto }
+    #logo-container { padding: 10px; background: #cce9fc; text-align: center; border-bottom: 1px dotted #0093ef; }
+        #logo-container img { display: block; margin: 0 auto }
 
+/* LANG */
+
+    #lang {
+        padding: 10px;
+        background-color: #cce9fc;
+        color: #fff;
+        text-align: center;
+        border-bottom: 1px dotted #0093ef;
+    }
+
+    #lang a {
+        color: #0093ef;
+    }
+
+    #lang .active {
+        color: #92AFC1;
+    }
+
+    .lang-change {
+        position: relative;
+        top: -3px;
+        font-weight: bold;
+    }
 
 /*  NAV  */
 
@@ -52,7 +77,12 @@
 
     #menu { background: #0093ef; color: #87cae3; text-align: center; }
         #menu a { padding: 8px 10px; display: block; border-bottom: 1px dotted #fff; text-align: left; color: #fff; }
+        [dir='rtl'] #menu a { text-align: right; }
 
+/* BASE */
+.form-search {padding:10px 10px; background-color: #009aef; color: #fff; margin: 0; border-bottom: 1px dotted #fff;}
+.form-search input {border: 0;}
+.form-search #q {padding: 5px;}
 
 /*  FOOTER  */
 
@@ -60,7 +90,7 @@
 
 /* Mobile "preview" for large screens */
 
-    @media screen and (min-width: 1024px) { 
+    @media screen and (min-width: 1024px) {
         html {
             background-color: #333;
         }

@@ -5,42 +5,42 @@
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       metal:define-macro="layout"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      i18n:domain="unicorecmsffl">
+      i18n:domain="unicorecmsffl"
+      dir="${view.get_language_direction()}">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}img/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="${request.static_url('cms:static/img/favicon.ico')}" />
     <title>Unicef / Universal Core</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     <meta name="description" content=""/>
     <meta name="keywords" content="moms,maternal,baby,pregnancy,pregnant,expectant,mama,mother,pain,birth,help"/>
-    <link href="${request.static_url('cms:static/css/style.css')}?v=20141014-2" rel="stylesheet" type="text/css" />
+    <link href="${request.static_url('cms:static/css/style.css')}?v=20150317" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="wrap">
-    <div id="nav">
-      <span tal:repeat="item view.get_available_languages">
-        <a href="/locale/?language=${item[0]}">${item[1]}</a>
-        <span tal:omit-tag="" tal:condition="not repeat.item.end"> |</span>
+    <div id="lang" tal:condition="len(view.get_display_languages())>1">
+      <span tal:repeat="item view.get_display_languages()">
+        <a tal:attributes="{'class':'active'} if view.locale==item[0] else {}" href="/locale/${item[0]}/">${item[1]}</a> |
       </span>
-    </div>
-    <div tal:define="localisation view.locale" tal:omit-tag="">
-        <div id="header">
-            <condition tal:omit-tag="" tal:condition="localisation and localisation=='spa_ES'">
-                <a href="/"><img width="120" alt="Para la Vida" src="${request.static_url('cms:static/img/logo_spa_es.png')}?v=20141014" border="0" /></a>
-            </condition>
-            <condition tal:omit-tag="" tal:condition="not (localisation and localisation=='spa_ES')">
-                <a href="/"><img alt="Facts for Life" src="${request.static_url('cms:static/img/logo.png')}?v=20141014" border="0" /></a>
-            </condition>
-        </div>
+       <a href="/locale/change/" tal:condition="len(view.get_available_languages)>2" class="lang-change">&hellip;</a>
     </div>
 
-    <div id="nav">
+    <div metal:use-macro="view.logo_template" tal:omit-tag="" tal:define="img_attrs view.get_logo_attributes(default_image_src=request.static_url('cms:static/img/logo_ffl.png'), width=120)">
+    </div>
+
+    <div id="nav" tal:condition="python:view.get_language_direction()=='ltr'" metal:define-slot="nav">
         <a href="/" i18n:translate="Home">Home</a> |
         <a href="/about/" i18n:translate="About">About</a> |
         <a href="/credits/" i18n:translate="Credits">Credits</a> |
         <a href="/contact/" i18n:translate="Contact">Contact</a>
     </div>
 
+    <div id="nav" tal:condition="python:view.get_language_direction()=='rtl'" metal:define-slot="nav">
+        <a href="/contact/" i18n:translate="Contact">Contact</a> |
+        <a href="/credits/" i18n:translate="Credits">Credits</a> |
+        <a href="/about/" i18n:translate="About">About</a> |
+        <a href="/" i18n:translate="Home">Home</a>
+    </div>
 
     <div id="content">
 
@@ -58,7 +58,6 @@
         </div>
 
     </div>
-
     <div id="footer">
         <span>&copy; Unicef 2014</span>
     </div>
