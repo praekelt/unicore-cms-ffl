@@ -16,3 +16,6 @@ dependencies:
  - python-yaml
  - cmake
  - elasticsearch
+ - libssl-dev
+ - libffi-dev
+
