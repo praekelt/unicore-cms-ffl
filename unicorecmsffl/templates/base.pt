@@ -58,8 +58,9 @@
         </div>
 
     </div>
-    <div id="footer">
-        <span>&copy; Unicef 2014</span>
+    <div id="footer" tal:define="site_footer view.get_page(None, 'site-footer', view.locale)">
+        <span tal:condition="site_footer">${site_footer.content}</span>
+        <span tal:condition="not site_footer">&copy; Unicef 2014</span>
     </div>
 
 </div>

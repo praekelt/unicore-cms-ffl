@@ -111,3 +111,30 @@ class TestViews(UnicoreTestCase):
         self.app.get('/content/detail/%s/' % page.uuid)
         self.app.get('/spice/content/detail/%s/' % page.uuid)
         self.app.get('/content/comments/%s/' % page.uuid)
+
+    def test_footer_page(self):
+        self.create_categories(self.workspace, count=1)
+
+        intro_page = Page({
+            'title': 'Footer page', 'language': 'eng_GB',
+            'description': 'this is the description text',
+            'slug': 'site-footer', 'content': 'this is the body of work',
+            'position': 0, 'modified_at': datetime.utcnow().isoformat()})
+        self.workspace.save(intro_page, 'save footer')
+        self.workspace.refresh_index()
+
+        resp = self.app.get('/?_LOCALE_=eng_GB', status=200)
+        self.assertTrue(
+            '<span>this is the body of work</span>' in
+            resp.body)
+        self.assertFalse(
+            '<span>&copy; Unicef 2014</span>' in
+            resp.body)
+
+        resp = self.app.get('/?_LOCALE_=swa_TZ', status=200)
+        self.assertFalse(
+            '<span>this is the body of work</span>' in
+            resp.body)
+        self.assertTrue(
+            '<span>&copy; Unicef 2014</span>' in
+            resp.body)
