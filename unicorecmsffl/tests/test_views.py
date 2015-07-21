@@ -128,7 +128,7 @@ class TestViews(UnicoreTestCase):
             '<span>this is the body of work</span>' in
             resp.body)
         self.assertFalse(
-            '<span>&copy; Unicef 2014</span>' in
+            '<span>&copy; Unicef 2015</span>' in
             resp.body)
 
         resp = self.app.get('/?_LOCALE_=swa_TZ', status=200)
@@ -136,5 +136,5 @@ class TestViews(UnicoreTestCase):
             '<span>this is the body of work</span>' in
             resp.body)
         self.assertTrue(
-            '<span>&copy; Unicef 2014</span>' in
+            '<span>&copy; Unicef 2015</span>' in
             resp.body)
