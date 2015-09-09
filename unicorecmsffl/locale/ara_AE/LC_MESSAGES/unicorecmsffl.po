@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-08-12 13:20+0200\n"
+"POT-Creation-Date: 2015-09-09 11:11+0200\n"
 "PO-Revision-Date: 2015-08-12 13:20+0200\n"
 "Last-Translator: Riz <milton@praekelt.com>\n"
 "Language-Team: Language ara\n"
@@ -15,32 +15,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Lingua 3.10\n"
 
-#: unicorecmsffl/templates/search_box.pt:9
-msgid "Search"
-msgstr ""
-
-#. Default: Home
-#: unicorecmsffl/templates/base.pt:32 unicorecmsffl/templates/base.pt:42
-#: unicorecmsffl/templates/base.pt:53
-msgid "Home"
-msgstr ""
-
-#. Default: About
-#: unicorecmsffl/templates/base.pt:33 unicorecmsffl/templates/base.pt:41
-#: unicorecmsffl/templates/base.pt:54
-msgid "About"
-msgstr ""
-
-#. Default: Credits
-#: unicorecmsffl/templates/base.pt:34 unicorecmsffl/templates/base.pt:40
-#: unicorecmsffl/templates/base.pt:55
-msgid "Credits"
-msgstr ""
-
-#. Default: Contact
-#: unicorecmsffl/templates/base.pt:35 unicorecmsffl/templates/base.pt:39
-#: unicorecmsffl/templates/base.pt:56
-msgid "Contact"
+#. Default: Latest
+#: unicorecmsffl/templates/home.pt:18
+msgid "Latest"
 msgstr ""
 
 #. Default: 1 search result for:
@@ -68,21 +45,6 @@ msgstr ""
 msgid "Sorry, no results found."
 msgstr ""
 
-#. Default: Latest
-#: unicorecmsffl/templates/home.pt:18
-msgid "Latest"
-msgstr ""
-
-#. Default: Previous
-#: unicorecmsffl/templates/paginator.pt:9
-msgid "Previous"
-msgstr ""
-
-#. Default: Next
-#: unicorecmsffl/templates/paginator.pt:17
-msgid "Next"
-msgstr ""
-
 #. Default: We can't find that page, sorry.
 #: unicorecmsffl/templates/404.pt:7
 msgid "We can't find that page, sorry."
@@ -97,4 +59,42 @@ msgstr ""
 #. Default: Go to the <dynamic element>
 #: unicorecmsffl/templates/404.pt:10
 msgid "Go to the"
+msgstr ""
+
+#: unicorecmsffl/templates/search_box.pt:9
+msgid "Search"
+msgstr ""
+
+#. Default: Previous
+#: unicorecmsffl/templates/paginator.pt:9
+msgid "Previous"
+msgstr ""
+
+#. Default: Next
+#: unicorecmsffl/templates/paginator.pt:17
+msgid "Next"
+msgstr ""
+
+#. Default: Home
+#: unicorecmsffl/templates/base.pt:32 unicorecmsffl/templates/base.pt:42
+#: unicorecmsffl/templates/base.pt:53
+msgid "Home"
+msgstr ""
+
+#. Default: About
+#: unicorecmsffl/templates/base.pt:33 unicorecmsffl/templates/base.pt:41
+#: unicorecmsffl/templates/base.pt:54
+msgid "About"
+msgstr ""
+
+#. Default: Credits
+#: unicorecmsffl/templates/base.pt:34 unicorecmsffl/templates/base.pt:40
+#: unicorecmsffl/templates/base.pt:55
+msgid "Credits"
+msgstr ""
+
+#. Default: Contact
+#: unicorecmsffl/templates/base.pt:35 unicorecmsffl/templates/base.pt:39
+#: unicorecmsffl/templates/base.pt:56
+msgid "Contact"
 msgstr ""

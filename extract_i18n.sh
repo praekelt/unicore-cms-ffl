@@ -7,7 +7,7 @@ pot-create -o unicorecmsffl/locale/unicorecmsffl.pot unicorecmsffl/
 declare -a arr=(
     "eng_GB" "tha_TH" "ind_ID" "swa_TZ" "swa_KE" "spa_ES" "hin_IN" "fre_FR"
     "por_PT" "ben_IN" "ben_BD" "mar_IN" "tam_IN" "tel_IN" "asm_IN" "nep_NP"
-    "urd_PK" "ara_AE")
+    "urd_PK" "ara_AE" "khm_KH")
 
 for lang in "${arr[@]}"
 do
